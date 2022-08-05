@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayumi Halpin</title>
+    <script src="https://kit.fontawesome.com/ec8f7abec1.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+</head>
+
+
+<body> 
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2><a href="index.html">Mayumi Halpin</a></h2>
+            <h4>Web design portfolio</h4>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+                <li><a href="graphics.html"><i class="fa-solid fa-palette"></i>Graphics and Logos</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-face-smile"></i>About me</a></li>
+                <li class="selectedPage"><a href="contact.html"><i class="fa-solid iconON fa-envelope"></i>Contact</a></li>
+            </ul>
+
+            <div class="sloth_logo">
+                <img src="img/frenchsloth_whitebackground.png" alt="Sloth Logo">
+            </div>
+
+            <div class="social_media">
+                <a href="https://www.linkedin.com/in/mayumi-halpin-7441b6176/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="main_content">
+
+            <div class="header">
+                <p class="header_graphic_contact">Don't hesitate to contact me - I would love to hear from you.<br> Please leave a comment below or send me E-mail:<span class="email_style"> mhalpin.design@gmail.com</span>. Thank you so much!</p>
+            </div>   
+   
+            <form action=””
+                   method=”POST”
+                   enctype=”multipart/form-data”
+                   name=”EmailForm”>
+                   <div>
+                       <label for="name" class="lavelname">Name: </label>
+                       <input type="text" id="name" name="user_name">
+                   </div>
+                   <div>
+                       <label for="mail">E-mail: </label>
+                       <input type="email" id="mail" name="user_mail">
+                   </div>
+                   <div>
+                       <label for="msg" class="labelmsg">Message: </label>
+                       <textarea id="msg" name="user_message"></textarea>
+                   </div>
+                   <div class="button">
+                       <button type="submit">Send</button> 
+                   </div> 
+            </form>
+
+            <div class="leopard_logo">
+                <img src="img/leopard.png" alt="Leopard Logo">
+            </div>
+
+            <footer class="footer_cntact">
+                © Mayumi Halpin 2022
+            </footer>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>
