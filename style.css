@@ -12,28 +12,13 @@ body {
   background: #f2ece3;
 }
 
-.wrapper {
-  display: flex;
-  position: relative;
-}
+/* sidebar */
 
 .wrapper .sidebar {
-  position: fixed;
-  width: 250px;
-  height:100%;
   background-color: #f4f5f0;
-  padding: 30px 0;
-}
-
-.wrapper .sidebar h2 {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .wrapper .sidebar h4 {
-  text-align: center;
-  margin-bottom: 50px;
   position: relative;
   font-size: 14px;
 }
@@ -45,7 +30,6 @@ h4:before {
   height: 1px;
   background: #2a3960;
   position: absolute;
-  left: 15px;
   top: 8px;
 }
 
@@ -56,12 +40,21 @@ h4:after {
   height: 1px;
   background: #2a3960;
   position: absolute;
-  right: 15px;
   top: 8px;
 }
 
+
+#toggle {
+  display: none;
+}
+
+nav label {
+  color: #2a3960;
+  font-size: 30px;
+  display: none;
+}
+
 .wrapper .sidebar ul li {
-  padding: 15px 0 15px 15px;
   border-bottom: 1px solid #c9cac6;
   font-size: 14px;
 }
@@ -89,81 +82,42 @@ h4:after {
 
 .wrapper .sidebar .social_media {
   position: absolute;
-  bottom: 0;
-  padding-left: 15px;
-  padding-bottom: 20px;
 } 
 
-.sloth_logo img {
-  width: auto;
-  height: 160px;
-  margin-top: 50px;
-  margin-left: 57px;
-}
-
 /* main content */
-
-.wrapper .main_content {
-  padding-left: 250px; /* to make no space on the left */
-}
 
 .hello {
   font-size: 26px;
   color: #f56495;
-  margin-top: 100px;
 }
 
 .wrapper .main_content .header p {
-  margin: 50px 100px 50px 100px;
- /* background-color: antiquewhite; */
-  max-width: 700px;
   font-size: 16px;
   letter-spacing: .04em;
   line-height: 1.3;
   color: #676767;
 }
 
-.wrapper .main_content .header .header_graphic_contact {
-  margin-top: 100px
-}  
-
-.web_info {
-  font-size: 18px;
-  font-weight: bold;
-  border-bottom: 2px solid #c9cac6;
-  padding-top: 10px;
-}
-
-.web_info_s {
-  font-size: 18px;
-  font-weight: bold;
-  border-bottom: 2px solid #c9cac6;
-  padding-top: 0; 
-}
-
-.space_mid {
-  padding-top: 10px;
-}
-
 .wrapper .main_content .project_info {
-  margin: 50px 100px;
-  padding-bottom: 50px;
-  /* background-color: rgb(201, 188, 170); */
   font-size: 14px;
+} 
+
+.title_underline {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #c9cac6;
+  padding-top: 10px;
 }
 
+/* affect index and graphic */
 .wrapper .main_content .paragragh {
   border-left: 3px solid #c9cac6;
-  margin: 5px 10px 30px 10px;
-  padding-left: 10px;
-  max-width: 600px;
   color: #676767;
 }
 
 .wrapper .main_content .goto_website {
   font-size: 15px;
   font-weight: bold;
-  padding-bottom: 10px;
 }
 
 .wrapper .main_content .goto_website:hover {
@@ -171,25 +125,20 @@ h4:after {
   text-decoration: underline 1px;
 }
 
-.space_top {
-  padding-top: 50px;
-}
-
 .small_title {
   font-size: small;
 }
 
-.wrapper .main_content .img_photo img {
-  margin-left: 10px;
-  margin-bottom: 60px;
+.wrapper .main_content .goto_website {
+  padding-bottom: 10px;
 }
 
-.wrapper .main_content .img_photo img:hover {
+
+.wrapper .main_content .img_graphicsLogo img:hover {
   opacity: 70%;
 }
 
 .wrapper .main_content .second_container {
-  margin-left: 50px;
   letter-spacing: .03em;
   line-height: 1.2;
 }
@@ -197,36 +146,24 @@ h4:after {
 
 /* About */
 
+
 .main_content .header_about img {
-  position: absolute;
   height: 150px;
   width: auto;
-  margin: 10px 30px 50px 100px;
 }
 
 .main_content .header_about p {
-  margin: 50px 100px 50px 250px;
-  max-width: 600px;
   font-size: 16px;
   /*background-color: aquamarine; */
-  padding-top: 30px;
   letter-spacing: .04em;
   line-height: 1.3;
 }
 
 .main_content .paragragh_about p {
-  margin: 40px 100px;
-  max-width: 900px;
-  padding-top: 40px;
   font-size: 14px;
   color: #676767;
   letter-spacing: .05em;
   line-height: 1.5;
-}
-
-.wrapper .main_content .img_photo_graphics {
-  margin-left: 10px;
-  margin-bottom: 60px;
 }
 
 .wrapper .main_content .img_sloth_about {
@@ -236,19 +173,15 @@ h4:after {
 .img_sloth_about ul {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
 /* contact form */
 
 form {
-  width: 500px;
   position: absolute;
-  top: 350px;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  padding: 30px 40px;
-  margin: 50px 100px;
  }
 
 label { 
@@ -268,7 +201,7 @@ input {
  }
  
 textarea {
-  width: 390px;
+  width: 300px;
   height: 50px;
   font-size: 15px;
   background-color: #e9e9e9;
@@ -319,10 +252,10 @@ form label  {
 
 .leopard_logo img {
   width: auto;
-  height: 160px;
+  height: 130px;
   float: right;
   margin-right: 100px;
-  margin-top: 270px;
+  margin-top: 300px;
 }
 
 /* footer */
@@ -351,3 +284,312 @@ form label  {
   font-size: 14px;
 }
 
+
+/* Mobile screen view */
+
+@media only screen and (max-width: 950px) { 
+
+  .wrapper .sidebar {
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wrapper .sidebar h2 {
+    margin-left: 35px;
+    padding-bottom: 10px;
+  }
+  
+  .wrapper .sidebar h4 {
+    margin-left: 50px;
+    position: relative;
+  }
+  
+  h4:before {
+    left: -40px;
+  }
+  
+  h4:after {
+    left: 150px;
+  }
+  
+  nav label {   
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding-right: 20px;
+    top: unset;
+    margin-top: -45px;
+  }
+
+  nav a {
+    display: block;
+    width: 180px;
+    margin: auto;
+  }
+
+  .wrapper .sidebar ul li {
+    padding: 15px 0px 15px 0px;
+  }
+
+
+  .wrapper .sidebar ul .menu {
+    margin-top: 20px;
+    position: relative;
+    z-index: +1;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  #toggle:checked + .menu {
+    height: auto;
+    display: block;
+  }   
+
+  .menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #f4f5f0;
+    border-style: groove;
+  } 
+
+  .sloth_logo img {
+    width: auto;
+    height: 100px;
+    margin: 15px 0px 15px 200px;
+  }
+
+  .wrapper .sidebar .social_media {
+    bottom: 0;
+    padding-left: 95px;
+    padding-bottom: 15px;
+  }
+
+
+
+/* main content mob */
+
+  .wrapper .main_content {
+    margin: 40px 15px
+  }
+
+  .wrapper .main_content .project_info {
+    margin: 20px 10px;
+    padding-bottom: 30px;
+    /* background-color: rgb(201, 188, 170); */
+    font-size: 14px;
+  }
+
+  .wrapper .main_content .paragragh {
+    margin: 10px 15px;
+    padding-left: 5px;
+  }
+
+  .space_top {
+    padding-top: 20px;
+  }
+
+  .wrapper .main_content .img_graphicsLogo img {
+    margin-bottom: 30px;
+  }  
+  
+  
+  /* About m */
+
+  
+  .main_content .header_about img {
+    margin: 15px;
+    float: left;
+  }
+  
+  .main_content .header_about p {
+    margin: 20px 5px 30px 5px;
+    /*background-color: aquamarine; */
+  }
+
+
+  /* contact form */
+
+  form {
+    top: 400px;
+  }
+
+}
+
+
+/* Large screen view (desktop size) */
+
+@media only screen and (min-width: 951px) { 
+
+  .wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  .wrapper .sidebar {
+    position: fixed;
+    width: 250px;
+    height:100%;
+    background-color: #f4f5f0;
+  }
+  
+  .wrapper .sidebar h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper .sidebar h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  
+  h4:before {
+    left: 15px;
+  }
+  
+  h4:after {
+    right: 15px;
+  }
+  
+  .wrapper .sidebar ul .menu {
+    padding-top: 10px;
+  }
+  
+  #toggle {
+    display: none;
+  }
+  
+  nav label {
+    color: #2a3960;
+    font-size: 30px;
+    display: none;
+  }
+  
+  .wrapper .sidebar ul li {
+    padding: 15px 0 15px 15px;
+  }
+  
+  .wrapper .sidebar ul li a .fa-solid {
+    width: 40px; /* space between logo and text */
+  }
+  
+  .wrapper .sidebar ul li:hover {
+    background-color: #f2ece3;
+    font-weight: bold;
+  }
+  
+  .wrapper .sidebar ul li:hover .fa-solid  {
+    color: #f56495;
+  }
+  
+  .selectedPage{
+    background-color: #f2ece3;
+  }
+  
+  .iconON {
+    color: #f56495;
+  }
+  
+  .wrapper .sidebar .social_media {
+    bottom: 0;
+    padding-left: 15px;
+    padding-bottom: 20px;
+  } 
+  
+  .sloth_logo img {
+    width: auto;
+    height: 160px;
+    margin-top: 100px;
+    margin-left: 80px;
+  }
+
+  /* main content L */
+
+  .wrapper .main_content {
+    padding-left: 250px; /* to make no space on the left */
+    /* main content is centered */ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .wrapper .main_content .header p {
+    margin: 50px 100px 50px 100px;
+   /* background-color: antiquewhite; */
+    max-width: 700px;
+  }
+  
+  .wrapper .main_content .header .header_graphic_contact {
+    margin-top: 100px
+  } 
+
+  .wrapper .main_content .project_info {
+    margin: 50px 100px;
+    padding-bottom: 50px;
+  }
+
+  .wrapper .main_content .paragragh {
+    margin: 5px 10px 30px 10px;
+    padding-left: 10px;
+    max-width: 600px;
+  }
+
+  .space_mid {
+    padding-top: 10px;
+  }
+
+  .space_top {
+    padding-top: 50px;
+  }
+
+  .wrapper .main_content .second_container {
+    margin-left: 50px;
+  }
+
+  .wrapper .main_content .img_graphicsLogo img {
+    margin-left: 10px;
+    margin-bottom: 60px;
+  }
+
+
+  /* About */
+
+.main_content .header_about {
+  padding-top: 20px;
+}
+
+.main_content .header_about img {
+  position: absolute;
+  margin: 50px 30px 50px 100px;
+  z-index: -1;
+}
+
+.main_content .header_about p {
+  margin: 50px 100px 50px 250px;
+  max-width: 600px;
+  /*background-color: aquamarine; */
+  padding-top: 30px;
+}
+
+.main_content .paragragh_about p {
+  margin: 40px 100px;
+  max-width: 900px;
+  padding-top: 40px;
+}
+
+  /* contact form */
+
+  form {
+    top: 300px;
+    padding: 30px 40px;
+    margin: 50px 100px;
+  }
+
+}
