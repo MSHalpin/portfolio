@@ -26,7 +26,6 @@ body {
 h4:before {
   content: "";
   display: block;
-  width: 30px;
   height: 1px;
   background: #2a3960;
   position: absolute;
@@ -36,7 +35,6 @@ h4:before {
 h4:after {
   content: "";
   display: block;
-  width: 30px;
   height: 1px;
   background: #2a3960;
   position: absolute;
@@ -288,7 +286,7 @@ form label  {
 
 /* Mobile screen view */
 
-@media only screen and (max-width: 950px) { 
+@media only screen and (max-width: 700px) { 
 
   .wrapper .sidebar {
     height: auto;
@@ -313,6 +311,14 @@ form label  {
   
   h4:after {
     left: 150px;
+  }
+
+  h4:before {
+    width: 30px;
+  }
+  
+  h4:after {
+    width: 30px;
   }
   
   nav label {   
@@ -434,9 +440,170 @@ form label  {
 }
 
 
+/* Tablet screen view */
+
+@media only screen and (max-width: 999px) and (min-width: 700px) { 
+
+  .wrapper .sidebar {
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wrapper .sidebar h2 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .wrapper .sidebar h4 {
+    text-align: center;
+    position: relative;
+  }
+  
+  h4:before {
+    right: 230px;
+  }
+  
+  h4:after {
+    left: 230px;
+  }
+
+  h4:before {
+    width: 60px;
+  }
+  
+  h4:after {
+    width: 60px;
+  }
+  
+  nav label {   
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding-right: 40px;
+    top: unset;
+    margin-top: -45px;
+  }
+
+  nav a {
+    display: block;
+    width: 180px;
+    margin: auto;
+  }
+
+  .wrapper .sidebar ul li {
+    padding: 15px 0px 15px 0px;
+  }
+
+
+  .wrapper .sidebar ul .menu {
+    margin-top: 20px;
+    position: relative;
+    z-index: +1;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  #toggle:checked + .menu {
+    height: auto;
+    display: block;
+  }   
+
+  .menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #f4f5f0;
+    border-style: groove;
+  } 
+
+  .sloth_logo img {
+    width: auto;
+    height: 100px;
+    margin: 15px 0px 15px 200px;
+  }
+
+  .wrapper .sidebar .social_media {
+    bottom: 0;
+    padding-left: 95px;
+    padding-bottom: 15px;
+  }
+
+
+
+/* main content mob */
+
+  .wrapper .main_content {
+    padding-top: 50px;
+    width: 650px;
+    margin: auto;
+  }
+
+  .wrapper .main_content .project_info {
+    margin: 20px 10px;
+    padding-bottom: 30px;
+    /* background-color: rgb(201, 188, 170); */
+    font-size: 14px;
+  }
+
+  .wrapper .main_content .paragragh {
+    margin: 20px 12px;
+    padding-left: 5px;
+  }
+
+  .space_top {
+    padding-top: 30px;
+  }
+
+  .wrapper .main_content .img_graphicsLogo img {
+    padding-top: 20px;
+  }  
+
+  .SP_img {
+    margin-left: 10%;
+  }
+
+  .SP_imgM {
+    margin-left: 20px;
+  }
+
+  .figma_bottomSP {
+    margin-bottom: 20px;
+    margin-left: 10%;
+  }
+
+  .title_underline {
+    padding-top: 50px;
+  }
+  
+  /* About m */
+
+  
+  .main_content .header_about img {
+    margin: 15px;
+    float: left;
+  }
+  
+  .main_content .header_about p {
+    margin: 20px 5px 30px 5px;
+    /*background-color: aquamarine; */
+  }
+
+
+  /* contact form */
+
+  form {
+    top: 400px;
+  }
+
+}
+
 /* Large screen view (desktop size) */
 
-@media only screen and (min-width: 951px) { 
+@media only screen and (min-width: 1000px) { 
 
   .wrapper {
     display: flex;
@@ -471,6 +638,14 @@ form label  {
     right: 15px;
   }
   
+  h4:before {
+    width: 30px;
+  }
+  
+  h4:after {
+    width: 30px;
+  }
+
   .wrapper .sidebar ul .menu {
     padding-top: 10px;
   }
@@ -555,7 +730,14 @@ form label  {
   }
 
   .wrapper .main_content .goto_website {
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  
+
+  .SP_imgM {
+    margin-left: 30px;
   }
 
   .space_mid {
@@ -566,12 +748,16 @@ form label  {
     padding-top: 50px;
   }
 
+  .header {
+    width: 850px;
+    margin: auto;
+  }
+
   .wrapper .main_content .second_container {
     margin-left: 50px;
   }
 
   .wrapper .main_content .img_graphicsLogo img {
-    margin-left: 10px;
     margin-bottom: 20px;
   }
 
@@ -580,7 +766,7 @@ form label  {
   }
 
   .title_underline {
-    padding-top: 10px;
+    padding-top: 40px;
   }
 
   /* About */
